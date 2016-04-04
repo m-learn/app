@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a5da6e">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:background="#a5da6e"
+        android:gravity="end" >
+
+            <!--<Button-->
+                <!--android:id="@+id/skipButton"-->
+                <!--style="?android:attr/buttonStyleSmall"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="skip"-->
+                <!--android:textStyle="normal|bold|italic" android:onClick="skipEvent"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="question"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/buttona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A" android:onClick="selectAnswer"/>
+
+        <Button
+            android:id="@+id/buttonb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B" android:onClick="selectAnswer"/>
+
+        <Button
+            android:id="@+id/buttonc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C" android:onClick="selectAnswer"/>
+
+        <Button
+            android:id="@+id/dButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D" android:onClick="selectAnswer"/>
+
+    </LinearLayout>

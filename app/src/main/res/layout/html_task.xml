@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#AFA7EF"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Develop Some Code"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#6AED83"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Final Task Part 1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Scrollable Content below header and above footer -->
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Write HTML using Notepad++ (PC) or TextEditor (Mac)"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Follow the steps below and create your first Web page"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Step 1: Open Notepad or Notepad++ (Windows) or TextEditor (Mac)"
+                android:textColor="#f50d34"
+                android:textSize="20sp"
+                android:layout_weight="0.31" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Step 2: In the Editor type the code you have learnt or see image below to help you \n(Remember the structure is important) "
+                android:textColor="#f50d34"
+                android:textSize="20sp"
+                android:layout_weight="0.31" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/code"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Step 3: Save the file on your computer (File > Save As: index.html)"
+                android:textColor="#f50d34"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Step 4: Open the saved file in your browser and you should see the below "
+                android:textColor="#f50d34"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tasko"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
