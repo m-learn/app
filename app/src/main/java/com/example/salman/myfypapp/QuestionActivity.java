@@ -2,15 +2,14 @@ package com.example.salman.myfypapp;
 
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import java.util.List;
-import java.util.Random;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import java.util.List;
 
 public class QuestionActivity extends Activity {
     private List<Question> questions;
